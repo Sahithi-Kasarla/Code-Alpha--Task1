@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewpoint" content="width=device-width,initial-scale=1.0">
+        <title> Image Gallery</title>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+        <div class="full-img" id="fullImgBox">
+
+            <img src="Task1/p1.jpg" id="fullImg">
+            <span onclick="closeFullImg()">X</span>
+            </div>
+        <div class="img-gallery">
+            <img src="Task1/p1.jpg" onclick="openFullImg(this.src)">
+            <img src="Task1/p2.jpg" onclick="openFullImg(this.src)">
+            <img src="Task1/p3.jpg" onclick="openFullImg(this.src)">
+            <img src="Task1/p4.jpg" onclick="openFullImg(this.src)">
+            </div>
+            <script>
+                var fullImgBox=document.getElementById("fullImgBox");
+                var fullImg=document.getElementById("fullImg");
+
+                function openFullImg(pic){
+                    fullImgBox.style.display="flex";
+                    fullImg.src=pic;
+                }
+                function closeFullImg(pic){
+                    fullImgBox.style.display="none";
+                   
+                }
+
+            </script>
+    </body>
+
+</html>
