@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title> Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="Images/logo.jpg" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars "onclick="openmenu()"></i>
+            
+        </nav>
+        <div class="header-text">
+            <p> Full Stack Developer</p>
+            <h1> Hi, I am <span>Sahithi</span> <br> from Hyderabad</h1>
+        </div>
+    </div>
+</div>
+<!-----------------About---------------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+        <div class="about-col-1">
+            <img src="Images/Img2.jpg">
+        </div>
+        <div class="about-col-2">
+            <h1 class="sub-title">About me</h1>
+            <p>I am an enthusiastic software engineer who loves to explore new technologies.</p>
+
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills </p>
+                <p class="tab-links" onclick="opentab('experience')">Experience </p>
+                <p class="tab-links" onclick="opentab('education')">Education </p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li> <span> Dot net</span><br> Designing web/app interfaces</li>
+                    <li> <span> Web Development</span><br> web app Development</li>
+                    <li> <span> SQL</span><br> Database Management System</li>
+
+
+                </ul>
+            </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li> <span> 2023 - Current</span><br> Dot net Developer</li>
+                        <li> <span> 2023 June - 2023 September</span><br> Associate(Chat Process)</li>
+    
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li> <span> 2018 - 2022</span><br> Bachelor of Technology</li>
+                        <li> <span> 2016 - 2018</span><br> Intermediate</li>
+                        <li> <span> till 2016</span><br> SSC</li>                  
+                    </ul>
+                </div>            
+            </div>
+        </div>
+    </div>
+</div>
+<!-------------------services--------------------->
+<div id="services">
+    <div class="container">
+        <h1 calss="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2> Web design</h2>
+                <p> Collaboratively create engaging, high-quality sites for your team, project or event. The sites look great on all screens, 
+                    from desktop to smartphone. All without learning design or programming.</p>
+                    <a href="#">learn more</a>
+
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2> UI/UX Design</h2>
+                <p> We create intuitive and user-friendly UI/UX designs that evolve with your business. Let's craft a design 
+                    solution that your customers will love and drive your company forward.</p>
+                    <a href="#">learn more</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<!-- --------------------portfolio----------------------------------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 calss="sub-title">My work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/w3.jpg">
+                <div class="layer">
+                    <h3>Social Media app</h3>
+                    <p> The app connects you o the talented people around the world
+                        Download it from playstore
+                    </p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/w4.jpg">
+                <div class="layer">
+                    <h3>Music app</h3>
+                    <p> The app connects you o the talented people around the world
+                        Download it from playstore
+                    </p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn"> See more</a>
+    </div>
+</div>
+<!-- -----------Contact-------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class=" fas fa-paper-plane"></i>contact@example.com</p>
+                <p><i class=" fas fa-paper-square-alt"></i>1234567890</p>
+
+                
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class=" fab fa-facebook"></i></a>
+                    <a href=""><i class=" fab fa-twitter-square"></i></a>
+                    <a href=""><i class=" fab fa-instagram"></i></a>
+                    <a href=""><i class=" fab fa-linkedin"></i></a>
+                </div>
+                <a href="Images/Sahithi(K) Resume (1).pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea type="Message"  rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2"> Submit</button>
+                </form>                 
+            </div>
+        </div>       
+    </div> 
+    <div class="copyright">
+        <p>copyright @ Sahithi.Made with love <i class="fas fa-heart"></i></p>
+
+    </div>   
+</div>
+
+
+
+
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link") ;     
+        } 
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab") ;     
+        } 
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+    var sidemenu=document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+</script>
+
+</body>
+</html>
